@@ -1,0 +1,42 @@
+Method 1: Pre-shared key (what you're using now)
+
+Alice and Bob both have:
+
+SECRET_KEY = b"my_secret_key"
+
+before communication starts.
+
+This is fine for:
+
+Learning
+Small private systems
+Embedded devices configured in advance
+
+The drawback is that someone has to securely install the key on both devices.
+
+Method 2: Key exchange (real-world approach)
+
+Alice and Bob do not know a shared secret initially.
+
+They run a key exchange protocol such as:
+
+Diffie–Hellman (DH)
+Elliptic Curve Diffie–Hellman (ECDH)
+
+After the exchange, both independently compute the same secret key without sending it directly over the network.
+
+Then they use that key for HMAC and encryption.
+
+Method 3: Public Key Infrastructure (HTTPS)
+
+This is how HTTPS works.
+
+Bob sends his public key (via a certificate).
+Alice verifies it.
+They perform a key exchange.
+Both derive a shared session key.
+That session key is used for encryption and HMAC.
+
+now if we look closely many auth algo has similarities 
+
+just similar in code—authentication algorithms actually use cryptographic algorithms as their core building blocks. While they share identical underlying mathematical structures, code libraries, and hardware logic, they process data differently to achieve entirely separate security goals

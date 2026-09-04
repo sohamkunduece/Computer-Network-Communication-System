@@ -1,12 +1,12 @@
 # Computer Network Communication System
-
+(Currently ongoing so many readme and other parts are still mising which will be added i due course as we move.)
 ## Overview
 
 This repository documents my learning journey in Computer Networks through the development of a TCP-based communication system using Python.
 
 The project was not created as a production-ready chat application. Instead, it was built to understand how real-world applications communicate over networks, how messages are transmitted between devices, and how networking concepts taught in textbooks are implemented in practice.
 
-The repository is organized into multiple stages, with each stage introducing a new networking concept while building upon the previous implementation.
+For a basic case, I planned  to go through the evolution on how a message can be transmitted, why various parts is used for contex and what issue is being tackled in each case 
 
 ---
 
@@ -41,16 +41,13 @@ The primary objectives of this project are:
 
 ## Project Structure
 
-### Stage 1 — Basic Client-Server Communication
-Understanding socket creation, TCP connections, and message exchange.
+The project is divided in cahpters and appendixes. the chapters erve the core story and appendix serves a branch of evolution that is needed.(recap doen till nopw)
 
-### Stage 2 — Multi-threaded Communication
-Introducing concurrent send and receive operations using Python threading.
-
-### Stage 3 — User Authentication
-Implementing basic user authentication before allowing communication.
-
----
+chapter 1- how is TCP connection exists in python and why is data send via packets?
+chapter 2- why is channel representation needed, what problems come and how does  such things effect teh intregity and security of the system?
+chapter 3- why athencation is needed and how does it fixes it with a basic key?
+chapter 4- How does hash solve authentication?
+chapter 5- How does hmac replaces hashto give a better intregity?
 
 ## Technologies Used
 
@@ -89,6 +86,9 @@ The project will continue to evolve with additional networking and security feat
 - Acknowledgement & Retransmission
 - File Transfer
 - Graphical User Interface (GUI)
+-and more
+
+It is to be noted that th project act as backbone struture of application. consideing anapplication has 2 parts, a visual operation and a background operation. netwrok is part of background operation
 
 ---
 

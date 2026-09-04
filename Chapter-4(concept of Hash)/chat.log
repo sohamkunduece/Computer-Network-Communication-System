@@ -1,0 +1,6 @@
+[2026-07-26 20:16:16]server:server started
+[2026-07-26 20:16:39]connect:('127.0.0.1', 64380) connected
+[2026-07-26 20:16:54]sent:hi
+[2026-07-26 20:16:54]receive:hi (modified by eve)
+[2026-07-26 20:16:54]eavesdropping:eve
+[2026-07-26 20:16:54]receive:exit (modified by eve)
