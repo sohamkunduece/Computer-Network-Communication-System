@@ -15,7 +15,7 @@ s.listen()
 c,addr=s.accept()
 print('Got connection from ',addr)
 msg="Thank you for connected. Ready to recieve message!please type \"exit\" to end"
-p=sp.create_packet(
+p=sp.create_packet(   # bsic packetcreation while sending data
         sender="server",
         receiver="client",
         message=msg
@@ -25,10 +25,10 @@ c.send(p.encode())
 while True:
    #recieve
     p = c.recv(1024).decode()
-    if not p: # Add this!
+    if not p: 
         print("Client disconnected.")
         break
-    data = sp.parse_packet(p)
+    data = sp.parse_packet(p) # Basic data retrieval from packets 
 
     if data["data"].lower()=="exit":
                 print("client ended the chat")

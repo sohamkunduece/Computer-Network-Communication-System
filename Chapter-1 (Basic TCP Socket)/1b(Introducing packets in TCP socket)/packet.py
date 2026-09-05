@@ -1,6 +1,6 @@
 import json
 
-def create_packet(sender,receiver,message):
+def create_packet(sender,receiver,message): # basic packet creating module
     packet={
         "header":"CHAT",
         "sender":sender,
@@ -11,5 +11,5 @@ def create_packet(sender,receiver,message):
         }
     return json.dumps(packet)
 
-def parse_packet(packet):
+def parse_packet(packet): # basic retriving data
     return json.loads(packet)
