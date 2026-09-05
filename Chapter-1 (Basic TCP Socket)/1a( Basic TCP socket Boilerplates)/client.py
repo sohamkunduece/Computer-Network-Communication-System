@@ -1,12 +1,15 @@
 import socket
 
+#same as the server side
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 host=socket.gethostname()
 port=456
 
+# here only clients wants to connect not wait
 s.connect((host,port))
 
+# rule: client talks and server responds
 while True:
     #recieve
     msg= s.recv(1024).decode()
@@ -29,4 +32,4 @@ while True:
     if msg.lower()=="exit":
         break
 
-s.close()
+s.close() # closing

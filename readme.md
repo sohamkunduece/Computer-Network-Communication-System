@@ -26,6 +26,7 @@ By implementing these concepts from scratch, I aimed to bridge the gap between t
 
 ---
 
+
 ## Objectives
 
 The primary objectives of this project are:
